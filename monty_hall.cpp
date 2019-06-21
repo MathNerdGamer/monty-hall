@@ -85,7 +85,7 @@ int main(int argc, char **argv)
 
     int successes{ 0 };
 
-    long double win_pct = 0.0f;
+    long double win_pct{ 0.0 };
 
     for( auto sim{ 0 }; sim < total_sims; ++sim )
     {
@@ -112,7 +112,7 @@ int main(int argc, char **argv)
 
     std::cout << "Result: " << successes << " / " << total_sims << '\n';
 
-    std::cout << "Using the optimal strategy, to swap after a goat is revealed, one wins " << 100*win_pct << "% of the time.\n";
+    std::cout << "Using the optimal strategy, to swap after a goat is revealed, one wins the car " << 100*win_pct << "% of the time.\n";
 
     return EXIT_SUCCESS;
 }
