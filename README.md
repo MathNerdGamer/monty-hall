@@ -1,6 +1,6 @@
 # Monty Hall
 
-A little C++ simulation for the Monty Hall problem.
+A little C++ simulation for the [Monty Hall problem](https://en.wikipedia.org/wiki/Monty_Hall_problem).
 
 Example usage:
 
