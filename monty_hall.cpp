@@ -57,11 +57,11 @@ int main( int argc, char **argv )
 
     for ( auto sim{ 0 }; sim < total_sims; ++sim )
     {
-        // Set up prizes
+        // Set up prizes - 2 with goats, 1 with car. The car door is picked at random.
         vector<prize> door( doors, prize::goat );
         door[select_door( rng )] = prize::car;
 
-        // Contestant selects a door
+        // Contestant selects a door at random.
         auto contestant = select_door( rng );
 
         // Here, Monty Hall opens all doors besides the door the contestant chose and one other.
